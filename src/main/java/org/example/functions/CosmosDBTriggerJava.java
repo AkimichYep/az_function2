@@ -32,7 +32,7 @@ public class CosmosDBTriggerJava {
                 name = "documents",
                 databaseName = "mydb",
                 containerName = "mycontainer",
-                connection = "AzureCosmosDBConnection",
+                connection = "AZURE_STORAGE",
                 leaseContainerName = "leases",
                 createLeaseContainerIfNotExists = true
             ) String[] documents,
