@@ -1,8 +1,8 @@
 # Production Go-Live Checklist (Azure Functions)
 
 This checklist is tailored for:
-- Function App: `fun-func`
-- Resource Group: `rg_az_func`
+- Function App: `azure-function-examples-1779091049777`
+- Resource Group: `attempt2-rg`
 
 ## 1) Freeze and version
 - Create a release tag for the commit you want to ship.
@@ -63,13 +63,13 @@ Production options:
 az account set --subscription "90cc9c81-c136-42ee-bb35-6a096182dc9d"
 mvn -DskipTests package
 $stage = "C:\Users\Maksym_Yepaneshnikov\azure-function-examples\target\azure-functions\azure-function-examples-1779091049777"
-$zip = "C:\Users\Maksym_Yepaneshnikov\azure-function-examples\target\fun-func-release.zip"
+$zip = "C:\Users\Maksym_Yepaneshnikov\azure-function-examples\target\azure-function-examples-1779091049777-release.zip"
 if (Test-Path $zip) { Remove-Item $zip -Force }
 Compress-Archive -Path "$stage\*" -DestinationPath $zip
 
 az functionapp deployment source config-zip `
-  --resource-group "rg_az_func" `
-  --name "fun-func" `
+  --resource-group "attempt2-rg" `
+  --name "azure-function-examples-1779091049777" `
   --src $zip
 ```
 
@@ -80,7 +80,7 @@ Smoke test (replace key):
 ```powershell
 $functionKey = "<FUNCTION_KEY>"
 Invoke-WebRequest -Method POST `
-  -Uri ("https://fun-func-e4esf8d0fvf9azfv.westeurope-01.azurewebsites.net/api/thirdparty/sync-mock?maxRecords=1&code=" + $functionKey) `
+  -Uri ("https://azure-function-examples-1779091049777.azurewebsites.net/api/thirdparty/sync-mock?maxRecords=1&code=" + $functionKey) `
   -UseBasicParsing | Select-Object -ExpandProperty Content
 ```
 

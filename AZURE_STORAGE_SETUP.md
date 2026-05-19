@@ -6,7 +6,7 @@
 
 1. **Go to Azure Portal** → https://portal.azure.com
 2. **Search for Storage Accounts** in the search bar
-3. **Find or create** a storage account in your resource group (`rg_az_func`)
+3. **Find or create** a storage account in your resource group (`attempt2-rg`)
 4. **Click on the storage account**
 5. **Left sidebar → Settings → Access keys**
 6. **Copy the "Connection string"** under Key 1 or Key 2
@@ -24,7 +24,7 @@ DefaultEndpointsProtocol=https;AccountName=mystorageacct;AccountKey=AbCdEfGhIJKL
 2. **Search: Storage account**
 3. **Create**
 4. **Subscription:** Same as your Cosmos DB
-5. **Resource group:** `rg_az_func`
+5. **Resource group:** `attempt2-rg`
 6. **Storage account name:** Something like `storageaksdev` (must be lowercase, no special chars)
 7. **Region:** West Europe (same as your Cosmos DB)
 8. **Review + Create**
@@ -36,12 +36,12 @@ DefaultEndpointsProtocol=https;AccountName=mystorageacct;AccountKey=AbCdEfGhIJKL
 
 ```bash
 # List storage accounts
-az storage account list --resource-group rg_az_func
+az storage account list --resource-group attempt2-rg
 
 # Get connection string for specific account
 az storage account show-connection-string \
   --name <storage-account-name> \
-  --resource-group rg_az_func
+  --resource-group attempt2-rg
 ```
 
 ---
@@ -121,14 +121,14 @@ For Azure deployment: **Required**
 # Create storage account
 az storage account create \
   --name storageaksdev \
-  --resource-group rg_az_func \
+  --resource-group attempt2-rg \
   --location westeurope \
   --sku Standard_LRS
 
 # Get connection string
 az storage account show-connection-string \
   --name storageaksdev \
-  --resource-group rg_az_func \
+  --resource-group attempt2-rg \
   --query connectionString \
   --output tsv
 ```
