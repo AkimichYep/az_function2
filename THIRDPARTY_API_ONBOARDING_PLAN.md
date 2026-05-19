@@ -1,7 +1,7 @@
-# ClearDemand API Onboarding Plan + Learning Roadmap
+# ThirdParty API Onboarding Plan + Learning Roadmap
 
 ## Goal
-Prepare and execute a high-priority integration to onboard ClearDemand API using Azure Functions (HTTP-triggered), event-driven patterns, REST fundamentals, and GitHub-based delivery.
+Prepare and execute a high-priority integration to onboard a ThirdParty API using Azure Functions (HTTP-triggered), event-driven patterns, REST fundamentals, and GitHub-based delivery.
 
 ## Context
 - **Project duration window:** 2 months
@@ -10,7 +10,7 @@ Prepare and execute a high-priority integration to onboard ClearDemand API using
 - **Target stack:** Java, Azure Function App, event-driven integration, REST APIs, Azure + GitHub workflows
 
 ## Assumptions
-- ClearDemand provides API docs (OpenAPI/Postman/spec), credentials, sandbox/prod endpoints.
+- ThirdParty provider supplies API docs (OpenAPI/Postman/spec), credentials, sandbox/prod endpoints.
 - We will integrate at least one business flow (e.g., pricing recommendation import/export).
 - Security/compliance approvals and network access are available in the first week.
 - Team can review PRs quickly (24-48h turnaround).
@@ -26,13 +26,13 @@ Prepare and execute a high-priority integration to onboard ClearDemand API using
 - Environments and secrets model agreed.
 
 ### Tasks
-- Collect ClearDemand API artifacts:
+- Collect ThirdParty API artifacts:
   - endpoint catalog
   - auth model
   - sample payloads
   - error model and rate limits
 - Define integration contract:
-  - source event -> transform -> ClearDemand API call
+  - source event -> transform -> ThirdParty API call
   - response handling and retry behavior
 - Define non-functional requirements:
   - throughput
@@ -53,7 +53,7 @@ Prepare and execute a high-priority integration to onboard ClearDemand API using
 
 ### Tasks
 - Build Java Azure Function skeleton:
-  - HTTP ingress function (`POST /api/cleardemand/sync`)
+  - HTTP ingress function (`POST /api/thirdparty/sync`)
   - shared HTTP client service
   - mapper/validator layer
 - Introduce event-driven extension points:
@@ -77,13 +77,13 @@ Prepare and execute a high-priority integration to onboard ClearDemand API using
 - Errors, retries, and telemetry are implemented.
 
 ### Tasks
-- Implement ClearDemand client:
+- Implement ThirdParty API client:
   - auth headers/token handling
   - timeout/retry with exponential backoff
   - 4xx/5xx classification
 - Implement business payload mapping:
   - request model validation
-  - transformation to ClearDemand schema
+  - transformation to ThirdParty schema
 - Implement idempotency and dedup strategy.
 - Add observability:
   - correlation ID
@@ -199,7 +199,7 @@ Prepare and execute a high-priority integration to onboard ClearDemand API using
 - Security basics: Key Vault references, managed identity.
 
 ## Week 8: Interview + Portfolio Packaging
-- Prepare architecture walkthrough for ClearDemand onboarding scenario.
+- Prepare architecture walkthrough for ThirdParty API onboarding scenario.
 - Prepare estimation rationale (4 weeks effort in 2-month window).
 - Build concise portfolio README with diagrams and outcomes.
 
@@ -215,15 +215,15 @@ Prepare and execute a high-priority integration to onboard ClearDemand API using
 ---
 
 ## Suggested Artifacts to Build in This Repo
-1. `docs/cleardemand-integration-architecture.md`
-2. `docs/cleardemand-api-mapping.md`
+1. `docs/thirdparty-integration-architecture.md`
+2. `docs/thirdparty-api-mapping.md`
 3. `docs/deployment-checklist.md`
-4. `docs/interview-notes-cleardemand.md`
+4. `docs/interview-notes-thirdparty.md`
 
 ---
 
 ## First 3 Actions (Now)
-1. Gather ClearDemand API technical docs (auth, endpoints, sample payloads).
+1. Gather ThirdParty API technical docs (auth, endpoints, sample payloads).
 2. Define one MVP business flow and success metric.
 3. Implement an HTTP-triggered Java function that calls a mock external API with retry + logging.
 
@@ -234,4 +234,5 @@ Prepare and execute a high-priority integration to onboard ClearDemand API using
 - **Delivery window:** up to 2 months (including approvals/UAT/go-live)
 - **Confidence:** Medium-High (assuming timely API docs/access)
 - **Main dependencies:** API credentials, sandbox readiness, UAT scheduling
+
 

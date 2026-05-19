@@ -62,17 +62,25 @@ Production options:
 ```powershell
 az account set --subscription "90cc9c81-c136-42ee-bb35-6a096182dc9d"
 mvn -DskipTests package
-mvn azure-functions:deploy
+$stage = "C:\Users\Maksym_Yepaneshnikov\azure-function-examples\target\azure-functions\azure-function-examples-1779091049777"
+$zip = "C:\Users\Maksym_Yepaneshnikov\azure-function-examples\target\fun-func-release.zip"
+if (Test-Path $zip) { Remove-Item $zip -Force }
+Compress-Archive -Path "$stage\*" -DestinationPath $zip
+
+az functionapp deployment source config-zip `
+  --resource-group "rg_az_func" `
+  --name "fun-func" `
+  --src $zip
 ```
 
-If you prefer zip deployment, first generate a zip artifact from the staged folder, then use `az functionapp deployment source config-zip`.
+Why this path: it deploys to your existing app directly and avoids Maven plugin trying to create/modify App Service plan resources.
 
 Smoke test (replace key):
 
 ```powershell
 $functionKey = "<FUNCTION_KEY>"
 Invoke-WebRequest -Method POST `
-  -Uri ("https://fun-func-e4esf8d0fvf9azfv.westeurope-01.azurewebsites.net/api/cleardemand/sync-mock?maxRecords=1&code=" + $functionKey) `
+  -Uri ("https://fun-func-e4esf8d0fvf9azfv.westeurope-01.azurewebsites.net/api/thirdparty/sync-mock?maxRecords=1&code=" + $functionKey) `
   -UseBasicParsing | Select-Object -ExpandProperty Content
 ```
 

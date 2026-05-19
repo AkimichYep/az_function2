@@ -1,21 +1,21 @@
-# Interview Notes - ClearDemand API Onboarding (Java + Azure Functions)
+# Interview Notes - ThirdParty API Onboarding (Java + Azure Functions)
 
 ## Purpose
-Use these notes to prepare for a Java Developer interview focused on onboarding the ClearDemand API with Azure Functions, event-driven integration, and GitHub delivery.
+Use these notes to prepare for a Java Developer interview focused on onboarding a third-party API with Azure Functions, event-driven integration, and GitHub delivery.
 
 ---
 
 ## 1) 60-Second Intro Pitch
-"I build reliable Java integrations on Azure with clear operational guardrails. For this ClearDemand onboarding, I would use an HTTP-triggered Azure Function as a controlled ingestion entry point, then process asynchronously through an event-driven layer for resiliency and scale. I focus on idempotency, retries, observability, and secure secret handling from day one. My execution style is incremental: prove a thin end-to-end flow quickly, then harden it with tests, monitoring, and CI/CD to support safe production rollout within the 2-month window."
+"I build reliable Java integrations on Azure with clear operational guardrails. For this third-party API onboarding, I would use an HTTP-triggered Azure Function as a controlled ingestion entry point, then process asynchronously through an event-driven layer for resiliency and scale. I focus on idempotency, retries, observability, and secure secret handling from day one. My execution style is incremental: prove a thin end-to-end flow quickly, then harden it with tests, monitoring, and CI/CD to support safe production rollout within the 2-month window."
 
 ---
 
 ## 2) Architecture You Can Explain on a Whiteboard
 ## High-level flow
-1. Source system calls `POST /api/cleardemand/sync` (HTTP trigger).
+1. Source system calls `POST /api/thirdparty/sync` (HTTP trigger).
 2. Function validates payload, assigns correlation ID, and enqueues message.
 3. Worker trigger (Queue/Event Hub) processes messages asynchronously.
-4. Worker maps payload to ClearDemand schema and calls ClearDemand REST API.
+4. Worker maps payload to target schema and calls third-party REST API.
 5. Success/failure metrics and structured logs go to Application Insights.
 6. Failures retry with backoff; poison messages route to DLQ for manual replay.
 
@@ -45,7 +45,7 @@ Use these notes to prepare for a Java Developer interview focused on onboarding 
 ---
 
 ## 4) Technical Deep-Dive Answers
-## Q: Why not call ClearDemand directly in HTTP trigger only?
+## Q: Why not call the third-party API directly in HTTP trigger only?
 A: It works for simple cases, but coupling user/request latency to downstream API health is risky. I prefer an async worker for retries, buffering, and throughput smoothing.
 
 ## Q: How do you handle duplicate requests?
@@ -71,7 +71,7 @@ A: Keep secrets in app settings via Key Vault references, avoid logging secrets,
 - Resource-oriented endpoint design and clear versioning
 - Input validation and explicit error model
 - Timeouts, retries, and connection reuse
-- Pagination handling if ClearDemand responses are large
+- Pagination handling if third-party API responses are large
 - Idempotency semantics for create/update operations
 
 ---
@@ -120,7 +120,7 @@ Tip: Replace results with your real numbers when available.
 ---
 
 ## 10) Questions to Ask Interviewers
-1. Which ClearDemand endpoints are in MVP scope first?
+1. Which third-party endpoints are in MVP scope first?
 2. What auth model is used (API key, OAuth, mTLS)?
 3. Expected volume, SLA, and retry tolerance?
 4. Is processing synchronous or event-driven from day one?
@@ -142,7 +142,7 @@ Tip: Replace results with your real numbers when available.
 ---
 
 ## 12) Quick Checklist Before Interview
-- Review `CLEARDEMAND_API_ONBOARDING_PLAN.md`
+- Review `THIRDPARTY_API_ONBOARDING_PLAN.md`
 - Be ready to draw architecture in 2-3 minutes
 - Prepare one real example for retries/idempotency
 - Prepare one CI/CD example from GitHub Actions
@@ -151,5 +151,6 @@ Tip: Replace results with your real numbers when available.
 ---
 
 ## 13) One-Liner Close
-"I can deliver the first working ClearDemand integration quickly, then harden it into a production-safe pipeline with clear observability and controlled release practices."
+"I can deliver the first working third-party integration quickly, then harden it into a production-safe pipeline with clear observability and controlled release practices."
+
 

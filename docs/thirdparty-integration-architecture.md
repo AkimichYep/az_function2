@@ -1,11 +1,11 @@
-# ClearDemand Integration Architecture
+# ThirdParty Integration Architecture
 
-This diagram shows a production-oriented onboarding pattern for ClearDemand API using Java Azure Functions.
+This diagram shows a production-oriented onboarding pattern for a third-party API using Java Azure Functions.
 
 ## High-Level Architecture (Pseudo Graphics)
 
 ```text
-+----------------------------+        POST /api/cleardemand/sync        +------------------------------+
++----------------------------+        POST /api/thirdparty/sync         +------------------------------+
 | Upstream System            | -----------------------------------------> | Azure Function App           |
 | ERP / Pricing Source       |                                            | HTTP Trigger                 |
 +----------------------------+                                            +------------------------------+
@@ -33,13 +33,13 @@ This diagram shows a production-oriented onboarding pattern for ClearDemand API 
                                                                            |          +----------------------+                
                                                                            v
                                                          +------------------------+
-                                                         | ClearDemand API Client |
+                                                         | ThirdParty API Client  |
                                                          | Retry/Backoff/Timeout  |
                                                          +------------------------+
                                                                            |
                                                                            v
                                                          +------------------------+
-                                                         | ClearDemand API        |
+                                                         | ThirdParty API         |
                                                          +------------------------+
 
 +----------------------+        telemetry/logs        +--------------------------+
@@ -63,11 +63,11 @@ Actors:
   H = HTTP Trigger
   Q = Queue/Topic
   W = Worker Trigger
-  C = ClearDemand API
+  C = ThirdParty API
   D = Dead Letter Queue
 
 Flow:
-  U -> H : POST /api/cleardemand/sync
+  U -> H : POST /api/thirdparty/sync
   H -> H : Validate payload + set correlationId
   H -> Q : Enqueue message
   H -> U : 202 Accepted
@@ -93,7 +93,7 @@ Flow:
 ## Core Design Decisions
 
 - Use HTTP trigger as controlled ingress contract and fast integration boundary.
-- Use asynchronous worker trigger to isolate ClearDemand latency/failures from callers.
+- Use asynchronous worker trigger to isolate third-party API latency/failures from callers.
 - Enforce idempotency to handle at-least-once delivery safely.
 - Use DLQ for non-recoverable failures with replay capability.
 - Keep secrets in Key Vault references; never hardcode credentials.
@@ -109,9 +109,10 @@ Flow:
 
 ## MVP Scope
 
-- 1 HTTP endpoint (`/api/cleardemand/sync`)
+- 1 HTTP endpoint (`/api/thirdparty/sync`)
 - 1 async worker flow
 - Retry/backoff + DLQ
 - Correlation logging and basic dashboards
 - CI/CD pipeline for dev deployment
+
 

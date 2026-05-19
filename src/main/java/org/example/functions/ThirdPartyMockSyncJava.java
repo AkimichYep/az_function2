@@ -31,29 +31,29 @@ import java.util.Optional;
 /**
  * Mock onboarding flow:
  * - reads product/price rows from an on-prem-like H2 database
- * - POSTs each row to a public API endpoint (mock ClearDemand API)
+ * - POSTs each row to a public API endpoint (mock third-party API)
  * - waits for each response and returns a summary
  */
-public class ClearDemandMockSyncJava {
+public class ThirdPartyMockSyncJava {
 
     private static final String DEFAULT_H2_URL = "jdbc:h2:mem:onpremdb;MODE=PostgreSQL;DB_CLOSE_DELAY=-1";
     private static final String DEFAULT_H2_USER = "sa";
     private static final String DEFAULT_H2_PASSWORD = "";
     private static final String DEFAULT_API_URL = "https://httpbin.org/post";
 
-    @FunctionName("ClearDemandMockSyncJava")
+    @FunctionName("ThirdPartyMockSyncJava")
     public HttpResponseMessage run(
             @HttpTrigger(
                     name = "req",
                     methods = {HttpMethod.GET, HttpMethod.POST},
                     authLevel = AuthorizationLevel.ANONYMOUS,
-                    route = "cleardemand/sync-mock") HttpRequestMessage<Optional<String>> request,
+                    route = "thirdparty/sync-mock") HttpRequestMessage<Optional<String>> request,
             final ExecutionContext context) {
 
         final String h2Url = readEnv("OnPremH2JdbcUrl", DEFAULT_H2_URL);
         final String h2User = readEnv("OnPremH2User", DEFAULT_H2_USER);
         final String h2Password = readEnv("OnPremH2Password", DEFAULT_H2_PASSWORD);
-        final String apiUrl = readEnv("MockClearDemandApiUrl", DEFAULT_API_URL);
+        final String apiUrl = readEnv("MockThirdPartyApiUrl", DEFAULT_API_URL);
 
         int maxRecords = parsePositiveInt(
                 request.getQueryParameters().get("maxRecords"),
@@ -319,4 +319,5 @@ public class ClearDemandMockSyncJava {
         }
     }
 }
+
 
