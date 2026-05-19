@@ -1,0 +1,561 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a3925f0c-8652-41c7-bfaf-e70accc294ad" name="Changes" comment="Third Party impl" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CopilotChats">
+    <option name="panelChat">
+      <chat>
+        <option name="activeSessionId" value="81c5940c-e152-45fd-ba9c-c0edfefc26f9" />
+        <option name="sessions">
+          <session>
+            <option name="chatType" value="PANEL" />
+            <option name="id" value="abbce7cc-93c1-4525-80ce-7b105f56d4de" />
+            <option name="modeId" value="Agent" />
+            <option name="modelType" value="builtin_family" />
+            <option name="modelValue" value="auto" />
+            <option name="status" value="Processing" />
+            <option name="targetType" value="LOCAL" />
+          </session>
+          <session>
+            <option name="chatType" value="PANEL" />
+            <option name="id" value="e2a64442-8646-453d-91b4-81335bd3bb6a" />
+            <option name="modeId" value="Agent" />
+            <option name="modelType" value="builtin_family" />
+            <option name="modelValue" value="auto" />
+            <option name="targetType" value="LOCAL" />
+          </session>
+          <session>
+            <option name="chatType" value="PANEL" />
+            <option name="id" value="42957c0b-3d23-4217-95df-44b927cfada1" />
+            <option name="modeId" value="Agent" />
+            <option name="modelType" value="builtin_family" />
+            <option name="modelValue" value="auto" />
+            <option name="targetType" value="LOCAL" />
+          </session>
+          <session>
+            <option name="chatType" value="PANEL" />
+            <option name="id" value="81c5940c-e152-45fd-ba9c-c0edfefc26f9" />
+            <option name="modeId" value="Agent" />
+            <option name="modelType" value="builtin_family" />
+            <option name="modelValue" value="auto" />
+            <option name="targetType" value="LOCAL" />
+          </session>
+        </option>
+        <option name="type" value="PANEL" />
+      </chat>
+    </option>
+  </component>
+  <component name="CopilotPersistence">
+    <persistenceIdMap>
+      <entry key="_C:/Users/Maksym_Yepaneshnikov/azure-function-examples" value="3DtAZi7iXxSkdFWsZmqwWl3JBbA" />
+    </persistenceIdMap>
+  </component>
+  <component name="CopilotUserSelectedModel">
+    <selectedModels>
+      <entry key="agent-panel" value="Auto" />
+      <entry key="chat-panel" value="Auto" />
+    </selectedModels>
+  </component>
+  <component name="EmbeddingIndexingInfo">
+    <option name="cachedIndexableFilesCount" value="42" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "maximyep"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/AkimichYep/az_function2.git",
+    "accountId": "10a36251-52aa-4ad4-97ca-3bfaf77fffe8"
+  }
+}]]></component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.0002908853205017" />
+      <entry key="MS500" value="1.2552573604274513" />
+      <entry key="S2" value="2.3878507375110303" />
+      <entry key="S5" value="3.1604160061744433" />
+      <entry key="S10" value="3.536664477731089" />
+      <entry key="S30" value="3.8345076543309573" />
+      <entry key="S60" value="3.915776390015951" />
+      <entry key="M2" value="3.9575111430656023" />
+      <entry key="M5" value="3.9829154290176843" />
+      <entry key="M10" value="3.9994529687564437" />
+      <entry key="M15" value="4.1129068648013245" />
+      <entry key="M30" value="5.753278813950482" />
+      <entry key="H1" value="10.75575111906873" />
+      <entry key="H2" value="17.25396919694043" />
+      <entry key="H4" value="22.563633622607412" />
+      <entry key="D1" value="28.580381971818376" />
+      <entry key="W1" value="29.79228526482998" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="0.0" />
+      <entry key="S5" value="0.0" />
+      <entry key="S10" value="0.0" />
+      <entry key="S30" value="0.0" />
+      <entry key="S60" value="0.0" />
+      <entry key="M2" value="0.0" />
+      <entry key="M5" value="0.0" />
+      <entry key="M10" value="0.0" />
+      <entry key="M15" value="0.0" />
+      <entry key="M30" value="0.0" />
+      <entry key="H1" value="0.0" />
+      <entry key="H2" value="0.0" />
+      <entry key="H4" value="0.0" />
+      <entry key="D1" value="0.0" />
+      <entry key="W1" value="0.0" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="0.8768900804429485" />
+      <entry key="MS500" value="1.1851807398836949" />
+      <entry key="S2" value="2.2297536013262116" />
+      <entry key="S5" value="3.0539087100526374" />
+      <entry key="S10" value="3.4731263921958813" />
+      <entry key="S30" value="3.8106664589028516" />
+      <entry key="S60" value="3.9034967271333603" />
+      <entry key="M2" value="3.9512794548232764" />
+      <entry key="M5" value="3.9804004342733723" />
+      <entry key="M10" value="3.9981898252511368" />
+      <entry key="M15" value="4.112046413764568" />
+      <entry key="M30" value="5.752718477359624" />
+      <entry key="H1" value="10.755272814249192" />
+      <entry key="H2" value="17.25360137847831" />
+      <entry key="H4" value="22.56339715005354" />
+      <entry key="D1" value="28.580332632806996" />
+      <entry key="W1" value="29.792277930761053" />
+    </decayedShown>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8,
+  &quot;fromUser&quot;: false
+}</component>
+  <component name="ProjectId" id="3DtAZi7iXxSkdFWsZmqwWl3JBbA" />
+  <component name="ProjectSessionTemplates">
+    <option name="panelTemplate">
+      <template>
+        <option name="modeId" value="Agent" />
+        <option name="model">
+          <model>
+            <option name="modelType" value="builtin_family" />
+            <option name="modelValue" value="auto" />
+          </model>
+        </option>
+        <option name="targetType" value="LOCAL" />
+      </template>
+    </option>
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Attach to process.pid 12388.executor": "ProcessAttachDebug",
+    "Attach to process.pid 12880.executor": "ProcessAttachDebug",
+    "Attach to process.pid 20936.executor": "ProcessAttachDebug",
+    "Attach to process.pid 29936.executor": "ProcessAttachDebug",
+    "Attach to process.pid 32048.executor": "ProcessAttachDebug",
+    "Attach to process.pid 34196.executor": "ProcessAttachDebug",
+    "Attach to process.pid 41816.executor": "ProcessAttachDebug",
+    "Attach to process.pid 7828.executor": "ProcessAttachDebug",
+    "Azure Functions.Deploy Functions: azure-function-examples:azure-function-examples.executor": "Run",
+    "Azure Functions.Deploy Functions: azure-function-examples:fun-func.executor": "Run",
+    "Azure Functions.Run Functions - azure-function-examples.executor": "Debug",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Remote JVM Debug.azure functions.executor": "Debug",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "azure-function-examples.wasFacetEverAdded": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "com.dp.ai.tool.code.settings.CodeAssistSettingsConfigurable"
+  }
+}]]></component>
+  <component name="RunManager" selected="Azure Functions.Deploy Functions: azure-function-examples:fun-func">
+    <configuration name="Deploy Functions: azure-function-examples:azure-function-examples" type="AZURE_FUNCTION_SUPPORT" factoryName="Deploy Functions">
+      <option name="appSettingsHash" value="91CB23DB70C0D9BE76FF11E7E43D5004" />
+      <option name="appSettingsKey" value="579a7a10-cca6-4e35-a571-74615460d286" />
+      <option name="config">
+        <FunctionAppConfig>
+          <option name="appName" value="fun-func" />
+          <option name="appSettingsToRemove" />
+          <option name="applicationInsightsConfig" />
+          <option name="diagnosticConfig" />
+          <option name="enableDistributedTracing" />
+          <option name="flexConsumptionConfiguration" />
+          <option name="pricingTier">
+            <PricingTier>
+              <option name="size" value="Y1" />
+              <option name="tier" value="Dynamic" />
+            </PricingTier>
+          </option>
+          <option name="region">
+            <Region>
+              <option name="abbreviation" value="WEU" />
+              <option name="label" value="West Europe" />
+              <option name="name" value="westeurope" />
+            </Region>
+          </option>
+          <option name="resourceGroup" value="rg_az_func" />
+          <option name="runtime">
+            <RuntimeConfig>
+              <option name="image" />
+              <option name="javaVersion" value="Java 21" />
+              <option name="os" value="Windows" />
+              <option name="registryUrl" />
+              <option name="startUpCommand" />
+              <option name="username" />
+              <option name="webContainer" />
+            </RuntimeConfig>
+          </option>
+          <option name="servicePlanName" value="ASP-rgazfunc-814e" />
+          <option name="servicePlanResourceGroup" value="rg_az_func" />
+          <option name="skipEndOfLifeValidation" value="true" />
+          <option name="slotConfig" />
+          <option name="storageAccountName" />
+          <option name="storageAccountResourceGroup" />
+          <option name="subscriptionId" value="90cc9c81-c136-42ee-bb35-6a096182dc9d" />
+        </FunctionAppConfig>
+      </option>
+      <option name="deploymentStagingDirectoryPath" />
+      <option name="functionAppConfig">
+        <FunctionAppConfig>
+          <option name="appSettingsToRemove">
+            <set />
+          </option>
+          <option name="application" />
+          <option name="containerConfiguration" />
+          <option name="deploymentSlot" />
+          <option name="environment" />
+          <option name="environmentConfig" />
+          <option name="flexConsumptionConfiguration">
+            <FlexConsumptionConfiguration>
+              <option name="authenticationMethod" value="StorageAccountConnectionString" />
+              <option name="deploymentAccount" />
+              <option name="deploymentContainer" />
+              <option name="deploymentResourceGroup" />
+              <option name="flexFunctionAppConfig" />
+              <option name="httpInstanceConcurrency" />
+              <option name="instanceSize" value="2048" />
+              <option name="maximumInstances" value="100" />
+              <option name="storageAccountConnectionString" value="DEPLOYMENT_STORAGE_CONNECTION_STRING" />
+              <option name="userAssignedIdentityResourceId" />
+            </FlexConsumptionConfiguration>
+          </option>
+          <option name="image" />
+          <option name="monitorConfig">
+            <MonitorConfig>
+              <option name="applicationInsightsConfig" />
+              <option name="diagnosticConfig">
+                <DiagnosticConfig>
+                  <option name="applicationLogLevel">
+                    <LogLevel>
+                      <option name="value" value="Error" />
+                    </LogLevel>
+                  </option>
+                  <option name="enableApplicationLog" value="true" />
+                  <option name="enableDetailedErrorMessage" value="false" />
+                  <option name="enableFailedRequestTracing" value="false" />
+                  <option name="enableWebServerLogging" value="true" />
+                  <option name="webServerLogQuota" value="35" />
+                  <option name="webServerRetentionPeriod" value="0" />
+                </DiagnosticConfig>
+              </option>
+            </MonitorConfig>
+          </option>
+          <option name="name" />
+          <option name="pricingTier" />
+          <option name="region" />
+          <option name="resourceGroup" />
+          <option name="resourceId" />
+          <option name="runtime" />
+          <option name="servicePlan" />
+          <option name="subscription" />
+        </FunctionAppConfig>
+      </option>
+      <option name="hostJsonPath" value="$PROJECT_DIR$/host.json" />
+      <option name="moduleName" value="azure-function-examples" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="ConnectionRunnerForConfigurationId" enabled="false">
+          <option name="envFile" value="C:\Users\Maksym_Yepaneshnikov\azure-function-examples\.azure\default\.env" />
+        </option>
+      </method>
+    </configuration>
+    <configuration name="Deploy Functions: azure-function-examples:fun-func" type="AZURE_FUNCTION_SUPPORT" factoryName="Deploy Functions">
+      <option name="appSettingsHash" value="91CB23DB70C0D9BE76FF11E7E43D5004" />
+      <option name="appSettingsKey" value="d7aa0caa-c33f-48de-8bbd-322e279f41cf" />
+      <option name="config">
+        <FunctionAppConfig>
+          <option name="appName" value="fun-func" />
+          <option name="appSettingsToRemove" />
+          <option name="applicationInsightsConfig" />
+          <option name="diagnosticConfig" />
+          <option name="enableDistributedTracing" />
+          <option name="flexConsumptionConfiguration" />
+          <option name="pricingTier">
+            <PricingTier>
+              <option name="size" value="Y1" />
+              <option name="tier" value="Dynamic" />
+            </PricingTier>
+          </option>
+          <option name="region">
+            <Region>
+              <option name="abbreviation" value="WEU" />
+              <option name="label" value="West Europe" />
+              <option name="name" value="westeurope" />
+            </Region>
+          </option>
+          <option name="resourceGroup" value="rg_az_func" />
+          <option name="runtime">
+            <RuntimeConfig>
+              <option name="image" />
+              <option name="javaVersion" value="Java 21" />
+              <option name="os" value="Windows" />
+              <option name="registryUrl" />
+              <option name="startUpCommand" />
+              <option name="username" />
+              <option name="webContainer" />
+            </RuntimeConfig>
+          </option>
+          <option name="servicePlanName" value="ASP-rgazfunc-814e" />
+          <option name="servicePlanResourceGroup" value="rg_az_func" />
+          <option name="skipEndOfLifeValidation" value="true" />
+          <option name="slotConfig" />
+          <option name="storageAccountName" />
+          <option name="storageAccountResourceGroup" />
+          <option name="subscriptionId" value="90cc9c81-c136-42ee-bb35-6a096182dc9d" />
+        </FunctionAppConfig>
+      </option>
+      <option name="deploymentStagingDirectoryPath" />
+      <option name="functionAppConfig">
+        <FunctionAppConfig>
+          <option name="appSettingsToRemove">
+            <set />
+          </option>
+          <option name="application" />
+          <option name="containerConfiguration" />
+          <option name="deploymentSlot" />
+          <option name="environment" />
+          <option name="environmentConfig" />
+          <option name="flexConsumptionConfiguration">
+            <FlexConsumptionConfiguration>
+              <option name="authenticationMethod" value="StorageAccountConnectionString" />
+              <option name="deploymentAccount" />
+              <option name="deploymentContainer" />
+              <option name="deploymentResourceGroup" />
+              <option name="flexFunctionAppConfig" />
+              <option name="httpInstanceConcurrency" />
+              <option name="instanceSize" value="2048" />
+              <option name="maximumInstances" value="100" />
+              <option name="storageAccountConnectionString" value="DEPLOYMENT_STORAGE_CONNECTION_STRING" />
+              <option name="userAssignedIdentityResourceId" />
+            </FlexConsumptionConfiguration>
+          </option>
+          <option name="image" />
+          <option name="monitorConfig">
+            <MonitorConfig>
+              <option name="applicationInsightsConfig" />
+              <option name="diagnosticConfig">
+                <DiagnosticConfig>
+                  <option name="applicationLogLevel">
+                    <LogLevel>
+                      <option name="value" value="Error" />
+                    </LogLevel>
+                  </option>
+                  <option name="enableApplicationLog" value="true" />
+                  <option name="enableDetailedErrorMessage" value="false" />
+                  <option name="enableFailedRequestTracing" value="false" />
+                  <option name="enableWebServerLogging" value="true" />
+                  <option name="webServerLogQuota" value="35" />
+                  <option name="webServerRetentionPeriod" value="0" />
+                </DiagnosticConfig>
+              </option>
+            </MonitorConfig>
+          </option>
+          <option name="name" />
+          <option name="pricingTier" />
+          <option name="region" />
+          <option name="resourceGroup" />
+          <option name="resourceId" />
+          <option name="runtime" />
+          <option name="servicePlan" />
+          <option name="subscription" />
+        </FunctionAppConfig>
+      </option>
+      <option name="hostJsonPath" value="$PROJECT_DIR$/host.json" />
+      <option name="moduleName" value="azure-function-examples" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="ConnectionRunnerForConfigurationId" enabled="false">
+          <option name="envFile" value="C:\Users\Maksym_Yepaneshnikov\azure-function-examples\.azure\default\.env" />
+        </option>
+      </method>
+    </configuration>
+    <configuration name="Run Functions - azure-function-examples" type="AZURE_FUNCTION_SUPPORT" factoryName="Run Functions" temporary="true">
+      <option name="appName" />
+      <option name="appServicePlanName" />
+      <option name="appServicePlanResourceGroup" />
+      <option name="appSettingsKey" value="4d7f2f09-6081-46a9-b768-91358f316345" />
+      <option name="artifact" />
+      <option name="debugOptions" />
+      <option name="deployment" />
+      <option name="deploymentStagingDirectoryPath" />
+      <option name="funcPath" value="C:\Program Files\Microsoft\Azure Functions Core Tools\func.exe" />
+      <option name="functionHostArguments" value="host start --port 53895" />
+      <option name="hostJsonPath" />
+      <option name="insightsName" />
+      <option name="instrumentationKey" />
+      <option name="javaVersion" />
+      <option name="localSettingsJsonPath" />
+      <option name="moduleName" value="azure-function-examples" />
+      <option name="os" />
+      <option name="pricingTier" />
+      <option name="providerMap">
+        <map />
+      </option>
+      <option name="region" />
+      <option name="resourceGroup" />
+      <option name="stagingFolder" />
+      <option name="subscription" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="ConnectionRunnerForConfigurationId" enabled="false">
+          <option name="envFile" value="C:\Users\Maksym_Yepaneshnikov\azure-function-examples\.azure\default\.env" />
+        </option>
+      </method>
+    </configuration>
+    <configuration default="true" type="AZURE_FUNCTION_SUPPORT" factoryName="Run Functions">
+      <option name="appName" />
+      <option name="appServicePlanName" />
+      <option name="appServicePlanResourceGroup" />
+      <option name="appSettingsKey" value="4cfa6abd-30fe-4c48-be7f-b7c8f8b258b3" />
+      <option name="artifact" />
+      <option name="debugOptions" />
+      <option name="deployment" />
+      <option name="deploymentStagingDirectoryPath" />
+      <option name="funcPath" />
+      <option name="functionHostArguments" />
+      <option name="hostJsonPath" />
+      <option name="insightsName" />
+      <option name="instrumentationKey" />
+      <option name="javaVersion" />
+      <option name="localSettingsJsonPath" />
+      <option name="moduleName" />
+      <option name="os" />
+      <option name="pricingTier" />
+      <option name="providerMap">
+        <map />
+      </option>
+      <option name="region" />
+      <option name="resourceGroup" />
+      <option name="stagingFolder" />
+      <option name="subscription" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="ConnectionRunnerForConfigurationId" enabled="false">
+          <option name="envFile" value="C:\Users\Maksym_Yepaneshnikov\azure-function-examples\.azure\default\.env" />
+        </option>
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Azure Functions.Run Functions - azure-function-examples" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-37e91769500f-intellij.indexing.shared.core-IU-261.24374.151" />
+        <option value="bundled-js-predefined-d6986cc7102b-31caf2ab9e3c-JavaScript-IU-261.24374.151" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a3925f0c-8652-41c7-bfaf-e70accc294ad" name="Changes" comment="" />
+      <created>1779091050575</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1779091050575</updated>
+    </task>
+    <task id="LOCAL-00001" summary="ClearDemand impl">
+      <option name="closed" value="true" />
+      <created>1779182767485</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1779182767485</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Third Party impl">
+      <option name="closed" value="true" />
+      <created>1779189759269</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1779189759269</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="dependencySupport" implementationName="executable:az" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="ClearDemand impl" />
+    <MESSAGE value="Third Party impl" />
+    <option name="LAST_COMMIT_MESSAGE" value="Third Party impl" />
+  </component>
+  <component name="github-copilot-workspace">
+    <instructionFileLocations>
+      <option value=".github/instructions" />
+    </instructionFileLocations>
+    <promptFileLocations>
+      <option value=".github/prompts" />
+    </promptFileLocations>
+  </component>
+</project>
