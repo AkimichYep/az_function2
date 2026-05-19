@@ -45,6 +45,13 @@
             <artifactId>postgresql</artifactId>
             <version>42.7.1</version>
         </dependency>
+
+        <!-- H2 JDBC Driver for local on-prem database simulation -->
+        <dependency>
+            <groupId>com.h2database</groupId>
+            <artifactId>h2</artifactId>
+            <version>2.2.224</version>
+        </dependency>
     </dependencies>
 
     <build>
