@@ -75,10 +75,17 @@ public class ClearDemandMockSyncJava {
 
             int successCount = 0;
             List<String> failures = new ArrayList<String>();
+            List<String> transmissionDetails = new ArrayList<String>();
 
             for (ProductPriceRow row : rows) {
                 String payload = toPayloadJson(row);
                 ApiCallResult result = postJson(apiUrl, payload);
+
+                transmissionDetails.add("sku=" + row.sku
+                        + " | sent=" + payload
+                        + " | receivedStatus=" + result.statusCode
+                        + " | receivedBody=" + result.bodySnippet);
+
                 if (result.statusCode >= 200 && result.statusCode < 300) {
                     successCount++;
                 } else {
@@ -95,6 +102,11 @@ public class ClearDemandMockSyncJava {
             if (!failures.isEmpty()) {
                 summary.append(" Failures: ").append(String.join(" | ", failures));
             }
+
+            summary.append(System.lineSeparator())
+                    .append("Details:")
+                    .append(System.lineSeparator())
+                    .append(String.join(System.lineSeparator(), transmissionDetails));
 
             return request.createResponseBuilder(HttpStatus.OK)
                     .body(summary.toString())
