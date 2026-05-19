@@ -216,7 +216,7 @@ Once comfortable locally:
 az login
 
 # Create resource group
-az group create --name rg_az_func --location westeurope
+az group create --name attempt2-rg --location westeurope
 
 # Deploy function app
 mvn azure-functions:deploy
